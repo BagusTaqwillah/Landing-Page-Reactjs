@@ -1,0 +1,35 @@
+body{
+    background-color: silver;
+}
+.jumbotron{
+    background-image: url(../assets/img/panelbg.jpg);
+    height: 500px;
+    background-size: cover;
+}
+
+ .thumbnail{
+    border: 4px solid white;
+    width: 300px;
+}
+.tombol{
+    width: 100px;
+}
+.konten{
+    background-color: silver;
+    padding-bottom: 50px;
+}
+.aboutme{
+    padding: 20px;
+}
+.footer{
+    background-color: silver;
+}
+.about{
+    padding: 50px 0 50px 0;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .thumbnail{
+        border: 4px solid white;
+        width: 200px;
+    }
+ }

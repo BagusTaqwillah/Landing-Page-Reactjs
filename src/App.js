@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import About from './components/About';
+import Footer from './components/Footer';
+import JumbotronPanel from './components/JumbotronPanel';
+import Konten from './components/Konten';
+import NavbarApp from'./components/NavbarApp';
+import "./css/Page.css"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* bagian atas */}
+      <div className='intro'>
+        <NavbarApp/>
+        <div className='jumbotron'>
+        <JumbotronPanel/>
+        </div>
+      </div>
+      {/* penutup atas */}
+      {/* konten */}
+      <div className='konten'>
+      <Konten/>
+      </div>
+      <div className='about bg-dark text-white'>
+      <About/>
+      </div>
+      <div className='footer'>
+      <Footer/>
+      </div>
+      {/* penutp konten */}
     </div>
   );
 }
